@@ -1,0 +1,187 @@
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  width: 240px;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: .7rem;
+}
+
+p {
+  font-size: 14px;
+}
+
+.line {
+  width: 100%;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  margin: 8px 0;
+}
+
+.topic-list {
+  margin-left: .8rem;
+}
+
+.topic-list-p {
+  color: #2D7EB6;
+  font-weight: 500;
+  padding: 3px 6px;
+  cursor: pointer;
+    margin: .1rem 0
+}
+
+.topic-list-p:hover {
+  background-color: #203e69;
+  color: white;
+  border-radius: 4px;
+}
+
+.topic-list-active {
+    background-color: #203e69;
+    color: white !important;
+    border-radius: 4px;
+}
+
+.topic-list p:hover a {
+  color: white;
+  text-decoration: unset;
+}
+
+.no-submit {
+    font-size: 12px;
+}
+
+.cur-browse {
+    margin-bottom: .5rem;
+}
+
+/*Forum stuff*/
+
+.forum-header {
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-right: .7rem;
+}
+
+.f-header {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+
+
+/* Custom Table */
+.my-table {
+    width: 100%;
+}
+
+.my-table, table, td, th, tr {
+}
+
+.my-table td {
+    font-size: 14px;
+    vertical-align: top;
+    padding: 8px 12px;
+}
+
+.my-table th {
+    padding: 5px 12px;
+}
+
+.my-table tr {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.my-table tr:nth-child(even) {
+    background-color: rgb(238, 238, 238);
+}
+
+/* Table */
+.tableWrapper table, .tableWrapper tr, .tableWrapper td, .tableWrapper th {
+    border: 2px solid #d2d2d2;
+    border-collapse: collapse;
+}
+
+.tableWrapper table {
+    width: 100%;
+}
+
+.tableWrapper td {
+    padding: 6px;
+}
+
+/* */
+
+.user-flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.avatar-x-small {
+  margin-right: .3rem;
+}
+
+/* Create thread */
+
+.forum-row {
+    display: flex;
+    flex-direction: row;
+}
+
+@media only screen and (max-width: 440px) {
+    .forum-header {
+        font-size: 1.7rem;
+    }
+
+    .f-header {
+        align-items: flex-end;
+    }
+
+    .lead {
+        font-size: .9rem;
+    }
+
+    .forum-row {
+        flex-direction: column;
+    }
+
+    .my-table {
+        margin-top: 1.5rem;
+    }
+
+    .user-flex img {
+        display: none;
+    }
+
+
+
+
+}
+
+
+/**/
+
+.ProseMirror {
+    padding: 20px;
+    border: 1px solid #cfd1dd;
+    border-top: unset;
+    min-height: 110px;
+    height: 100%;
+    background-color: white;
+}
+
+.ProseMirror:active {
+    border: 1px solid #cfd1dd;
+    border-top: unset;
+}
+
+.ProseMirror:focus {
+    border: 1px solid #cfd1dd;
+    border-top: unset;
+    outline: unset;
+}
+
